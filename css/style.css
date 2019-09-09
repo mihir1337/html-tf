@@ -1,0 +1,106 @@
+/* 
+------------------
+Template Name: 
+Author: rsthemes
+Author Email: info.rsthemes@gmail.com
+Version: 1.0
+------------------
+
+----------------
+Table of Content
+----------------
+1.common css
+2.header css
+3.banner css
+4.about css
+5.services css
+6.qualification css
+7.portfolio css
+8.blog css
+9.review css
+10.contact css
+11.footer css
+*/
+
+
+/*______________________ Global stlye ___________________*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Roboto:300,400');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a,
+a:hover,
+a:visited,
+a:link {
+    text-decoration: none;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: #222222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="url"],
+select,
+textarea {
+    border: 1px solid #CACACA;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+a,
+button,
+input[type="submit"] {
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*______________________ Main CSS Start From Here ___________________*/
+
