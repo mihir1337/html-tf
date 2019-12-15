@@ -1,0 +1,125 @@
+/* 
+------------------
+Template Name: 
+Author: rsthemes
+Author Email: info.rsthemes@gmail.com
+Version: 1.0
+------------------
+
+----------------
+Table of Content
+----------------
+1.common css
+*/
+
+
+/*______________________ Global stlye ___________________*/
+
+/* ---------------------
+01. Helper-Class 
+----------------------- */
+.full-wrapper {
+    position: relative;
+}
+
+
+/* ---------------------
+Button-Styles
+----------------------- */
+.mouse-dir {
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+    z-index: 4;
+    margin-bottom: -8px;
+}
+.mouse-dir .dir-part {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #558bff;
+    -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.mouse-dir:hover .dir-part {
+    width: 260%;
+    height: 562.5px;
+}
+
+.button-dark {
+    display: inline-block;
+    width: 170px;
+    height: 60px;
+    background-color: #190844;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.button-dark:hover {
+    color: #190844;
+}
+
+.button-primary.mouse-dir .dir-part,
+.button-dark.mouse-dir .dir-part {
+    background-color: #ffffff;
+}
+
+/* ------------------------
+12. ScrollUpButton
+-------------------------- */
+#scrollUp {
+    position: fixed;
+    right: 2%;
+    top: 100%;
+    width: 28px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    border: 2px solid #558bff;
+    color: #558bff;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 100px;
+    z-index: 999;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#scrollUp:hover {
+    background-color: #558bff;
+    color: #ffffff;
+}
+
+#scrollUp.active {
+    top: calc(100% - 110px)
+}
+
+#scrollUp i {
+    -webkit-animation: mymove 1s ease-in 0s infinite alternate;
+            animation: mymove 1s ease-in 0s infinite alternate;
+    display: inline-block;
+    position: relative;
+}
+
+@-webkit-keyframes mymove {
+    from {top:-5px;}
+    to {top:5px;}
+}
+
+@keyframes mymove {
+    from {top:-5px;}
+    to {top:5px;}
+}
